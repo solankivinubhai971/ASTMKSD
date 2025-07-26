@@ -390,7 +390,7 @@ const Home = () => {
             (tech, i) => (
               <img
                 key={i}
-                src={`/images/${tech.toLowerCase()}.png`}
+                src={`/images/${tech}.png`}
                 alt={tech}
               />
             )
