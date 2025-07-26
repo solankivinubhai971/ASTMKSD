@@ -508,7 +508,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 0;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .case-image img {
@@ -658,10 +658,9 @@
 
 .second-case-card:nth-child(2) .second-case-heading,
 .second-case-card:nth-child(3) .second-case-heading {
-   white-space: normal;
+  white-space: normal;
   max-width: 556px;
 }
-
 
 .second-case-link {
   font-size: 13px;
@@ -680,6 +679,247 @@
   letter-spacing: 0%;
 }
 
-.view-case{
+.view-case {
   margin-top: 22px;
+}
+
+.about-company {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 147px 0px 177px 0px;
+  margin-top: 121px;
+}
+
+.about-subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 0;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 5%;
+  opacity: 0.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: #898d8f;
+}
+
+.about-title {
+  text-transform: uppercase;
+  margin: 13px 0px 0px 0px;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 43px;
+  line-height: 100%;
+  letter-spacing: -0.5%;
+  text-align: center;
+}
+
+.about-desc {
+  font-size: 16px;
+  opacity: 0.8;
+  margin: 27px 0px 0px 0px;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.company-stats {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin: 119px 0px 0px 0px;
+}
+
+.company-stats div h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0px 0px 0px 0px;
+}
+
+.company-stats div p {
+  font-size: 14px;
+  opacity: 0.6;
+  max-width: 220px;
+  margin: 20px 0px 0px 0px;
+}
+
+.testimonial-section {
+  background: #f9f9f9;
+  text-align: center;
+  padding-left: 331px;
+  padding-bottom: 140px;
+  padding-top: 91px;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-subtitle {
+  text-align: start;
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  margin-top: 73px;
+}
+
+.testimonial-heading {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: start;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.client-logos-absolute {
+  position: absolute;
+  top: 90px;
+  right: 80px;
+
+  .logo {
+    position: absolute;
+    opacity: 1;
+    height: 40px;
+  }
+
+  .goodfirms {
+    width: 269px;
+    height: 40px;
+    top: 78px;
+    right: 420px;
+  }
+
+  .forbes {
+    top: 55px;
+    right: 45px;
+  }
+
+  .clutch {
+    top: 211px;
+    right: 264px;
+  }
+
+  .coinmarketcap {
+    top: 333px;
+    right: 9px;
+  }
+
+  .upwork {
+    top: 296px;
+    right: 588.5px;
+  }
+}
+
+.testimonial-box {
+  background: #fff;
+  max-width: 1242px;
+  /* border-radius: 12px; */
+  box-shadow: 0px 0px 40px 0px #9c9c9c26;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.testimonial-pagination {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 138px;
+
+  span {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+
+    &.active {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-left: 64px;
+}
+
+.upwork-logo {
+  height: 24px;
+}
+
+.testimonial-text {
+  margin-top: 36px;
+  margin-bottom: 24px;
+  padding-left: 64px;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  max-width: 1250px;
+  font-style: DemiBold;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 64px;
+  margin: 0;
+  padding-bottom: 58px;
+}
+
+.author-title {
+  font-weight: normal;
+  font-size: 13px;
+  color: gray;
+}
+
+.tech-section {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.tech-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.tech-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.tech-logos img {
+  height: 30px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.tech-logos img:hover {
+  opacity: 1;
 }
