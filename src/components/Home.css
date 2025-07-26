@@ -450,7 +450,7 @@
   background-color: #fff;
   margin-top: 192px;
   margin-left: 241px;
-  margin-right: 408px;
+  margin-right: 220px;
 }
 
 .case-header {
@@ -513,9 +513,9 @@
 
 .case-image img {
   width: 100%;
-  max-width: 556px;
+  max-width: 656px;
   height: 556px;
-  border-radius: 10px;
+  border-radius: 15px;
   display: block;
 }
 
@@ -568,4 +568,118 @@
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0%;
+}
+
+.second-case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: flex-start;
+  column-gap: 147px;
+  row-gap: 100px;
+  margin-top: 100px;
+}
+
+.second-case-card:first-child {
+  grid-column: span 2;
+  width: 1459px;
+  height: 677px;
+}
+
+.first-case-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  gap: 20px;
+}
+
+.first-case-header-row .second-case-heading {
+  flex: 1;
+  margin: 0;
+}
+
+.first-case-header-row .second-case-link {
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.second-case-card:first-child .devider {
+  display: none;
+}
+
+.second-case-card:nth-child(2),
+.second-case-card:nth-child(3) {
+  width: 656px;
+}
+
+.second-case-card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.second-case-image img {
+  width: 100%;
+  /* max-width: 556px; */
+  height: 556px;
+  border-radius: 15px;
+  display: block;
+}
+
+.second-case-meta {
+  color: #626262;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  text-align: start;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.second-case-heading {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  white-space: normal;
+  text-align: start;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 35px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.second-case-card:nth-child(2) .second-case-heading,
+.second-case-card:nth-child(3) .second-case-heading {
+   white-space: normal;
+  max-width: 556px;
+}
+
+
+.second-case-link {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  position: relative;
+  text-align: end;
+  /* margin-top: 22px; */
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.view-case{
+  margin-top: 22px;
 }

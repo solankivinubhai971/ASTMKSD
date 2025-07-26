@@ -110,7 +110,8 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="why-section">
+      {/* why section */}
+      <div className="why-section">
         <div className="why-content">
           <div className="why-left">
             <p className="why-subtitle">WHY WE STARTED?</p>
@@ -197,17 +198,17 @@ const Home = () => {
             />
           ))}
         </div>
-      </section>
+      </div>
 
       {/* case study section */}
-      <section className="case-studies-section">
+      <div className="case-studies-section">
         <div className="case-header">
           <div className="case-header-left">
             <h3 className="case-header-tag">Portfolio</h3>
             <h2 className="case-title">OUR CASE STUDIES</h2>
           </div>
           <a href="#" className="view-all-link">
-            VIEW ALL  &nbsp;↗
+            VIEW ALL &nbsp;↗
           </a>
         </div>
 
@@ -226,7 +227,42 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </section>
+
+        <div className="second-case-studies-grid">
+          {[1, 2, 3].map((_, i) => (
+            <div key={i} className="second-case-card">
+              <div className="second-case-image">
+                <img
+                  src={`/images/secondcase${i + 1}.png`}
+                  alt={`Case ${i + 1}`}
+                />
+              </div>
+              <p className="second-case-meta">EDUCATION | WORDPRESS | B2B</p>
+
+              {i === 0 ? (
+                <div className="first-case-header-row">
+                  <h3 className="second-case-heading">
+                    CREATIVE SOLUTION FOR BUSINESS
+                  </h3>
+                  <a href="#" className="second-case-link">
+                    VIEW CASE STUDY ↗
+                  </a>
+                </div>
+              ) : (
+                <>
+                  <h3 className="second-case-heading">
+                    CREATIVE SOLUTION FOR BUSINESS
+                  </h3>
+                  <div className="devider"></div>
+                  <a href="#" className="second-case-link view-case">
+                    VIEW CASE STUDY ↗
+                  </a>
+                </>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 };
