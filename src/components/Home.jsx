@@ -198,6 +198,35 @@ const Home = () => {
           ))}
         </div>
       </section>
+
+      {/* case study section */}
+      <section className="case-studies-section">
+        <div className="case-header">
+          <div className="case-header-left">
+            <h3 className="case-header-tag">Portfolio</h3>
+            <h2 className="case-title">OUR CASE STUDIES</h2>
+          </div>
+          <a href="#" className="view-all-link">
+            VIEW ALL  &nbsp;↗
+          </a>
+        </div>
+
+        <div className="case-studies-grid">
+          {[1, 2, 3, 4].map((_, i) => (
+            <div key={i} className="case-card">
+              <div className="case-image">
+                <img src={`/images/case${i + 1}.png`} alt={`Case ${i + 1}`} />
+              </div>
+              <p className="case-meta">EDUCATION | WORDPRESS | B2B</p>
+              <h3 className="case-heading">CREATIVE SOLUTION FOR BUSINESS</h3>
+              <div className="devider"></div>
+              <a href="#" className="case-link">
+                VIEW CASE STUDY ↗
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 };

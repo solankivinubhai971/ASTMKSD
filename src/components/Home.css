@@ -256,7 +256,6 @@
 /* Why Section Styles */
 .why-section {
   background: white;
-  padding: 5rem 10%;
 }
 
 .why-content {
@@ -271,6 +270,8 @@
   flex: 1;
   align-items: flex-start;
   text-align: start;
+  margin-top: 281px;
+  margin-left: 221px;
 }
 
 .why-subtitle {
@@ -303,6 +304,8 @@
   flex: 1;
   max-width: 400px;
   position: relative;
+  margin-top: 176px;
+  margin-right: 220px;
 }
 
 .indicator-dots {
@@ -423,6 +426,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+  margin-left: 164px;
+  margin-right: 172px;
 }
 
 .brand-logo {
@@ -438,4 +443,129 @@
 .brand-logo:hover {
   filter: grayscale(0%);
   opacity: 1;
+}
+
+.case-studies-section {
+  /* padding: 80px 5%; */
+  background-color: #fff;
+  margin-top: 192px;
+  margin-left: 241px;
+  margin-right: 408px;
+}
+
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 91px;
+}
+
+.case-header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.case-header-tag {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #777;
+  /* margin-bottom: 6px; */
+  margin: 0px 0px 0px 0px;
+  text-align: start;
+}
+
+.case-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 13px;
+  margin-bottom: 0px;
+}
+
+.view-all-link {
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.7;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: flex-start;
+  column-gap: 147px;
+  row-gap: 100px;
+}
+
+.case-card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  margin-bottom: 0
+}
+
+.case-image img {
+  width: 100%;
+  max-width: 556px;
+  height: 556px;
+  border-radius: 10px;
+  display: block;
+}
+
+.case-meta {
+  color: #626262;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  text-align: start;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.case-heading {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  white-space: normal;
+  max-width: 556px;
+  text-align: start;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 35px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.devider {
+  margin-top: 29px;
+  border: 1px solid #626262;
+}
+
+.case-link {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  position: relative;
+  text-align: end;
+  margin-top: 22px;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
 }
