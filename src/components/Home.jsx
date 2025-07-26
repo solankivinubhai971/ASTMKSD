@@ -329,7 +329,7 @@ const Home = () => {
 
         <div className="client-logos-absolute">
           <img
-            src="/images/clients/goodfirms.png"
+            src="/images/clients/GoodFirms.png"
             alt="GoodFirms"
             className="logo goodfirms"
           />
@@ -349,7 +349,7 @@ const Home = () => {
             className="logo coinmarketcap"
           />
           <img
-            src="/images/clients/upwork.png"
+            src="/images/clients/Upwork.png"
             alt="Upwork"
             className="logo upwork"
           />
