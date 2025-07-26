@@ -1,7 +1,33 @@
-import React from "react";
 import "./Home.css";
+import React, { useState } from "react";
 
 const Home = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const CardData = [
+    {
+      title: "BLOCKCHAIN DEVELOPMENT",
+      icon: "/images/blockchain-icon.svg",
+      background: "/images/blockchain.svg",
+      description:
+        "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    },
+    {
+      title: "ARTIFICIAL INTELLIGENCE",
+      icon: "/images/ai-icon.svg",
+      background: "/images/ai.svg",
+      description:
+        "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    },
+    {
+      title: "MOBILE APP DEVELOPMENT",
+      icon: "/images/mobile-icon.svg",
+      background: "/images/mobile.svg",
+      description:
+        "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+    },
+  ];
+
   return (
     <>
       {/* hero section */}
@@ -97,24 +123,55 @@ const Home = () => {
 
           <div className="why-right">
             <div className="indicator-dots">
-              <span className="dot active">1</span>
-              <span className="dot">2</span>
-              <span className="dot">3</span>
+              {CardData.map((_, index) => (
+                <span
+                  key={index}
+                  className={`dot ${activeIndex === index ? "active" : ""}`}
+                  onClick={() => setActiveIndex(index)}
+                >
+                  {index + 1}
+                </span>
+              ))}
             </div>
 
-            <div className="feature-card">
-              <div className="card-icon">
-                <img src="/images/blockchain-icon.svg" alt="Blockchain Icon" />
-              </div>
-              <h3 className="card-title">BLOCKCHAIN <br/> DEVELOPMENT</h3>
-              <p className="card-text">
-                Lorem ipsum is placeholder text commonly used in the graphic,
-                print, and publishing industries for previewing layouts and
-                visual mockups.
-              </p>
-              <a href="#" className="card-view-link">
-                VIEW ↗
-              </a>
+            <div className="carousel-container">
+              {CardData.map((item, index) => {
+                let cardClass = "feature-card";
+
+                if (index === activeIndex) {
+                  cardClass += " active";
+                } else if (index === (activeIndex + 1) % CardData.length) {
+                  cardClass += " behind-1";
+                } else if (index === (activeIndex + 2) % CardData.length) {
+                  cardClass += " behind-2";
+                } else {
+                  return null;
+                }
+
+                return (
+                  <div
+                    key={index}
+                    className={cardClass}
+                    style={{
+                      backgroundImage: `url(${item.background})`,
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  >
+                    <div className="card-icon">
+                      <img src={item.icon} alt="Icon" />
+                    </div>
+                    <h3 className="card-title">
+                      {item.title.split(" ").slice(0, -1).join(" ")}
+                      <br />
+                      {item.title.split(" ").slice(-1)}
+                    </h3>
+                    <p className="card-text">{item.description}</p>
+                    <a href="#" className="card-view-link">
+                      VIEW ↗
+                    </a>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
