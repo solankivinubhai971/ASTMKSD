@@ -388,15 +388,117 @@ const Home = () => {
         <div className="tech-logos">
           {["TensorFlow", "yoast", "Jira", "near", "GitHub", "aws"].map(
             (tech, i) => (
-              <img
-                key={i}
-                src={`/images/${tech}.png`}
-                alt={tech}
-              />
+              <img key={i} src={`/images/${tech}.png`} alt={tech} />
             )
           )}
         </div>
       </div>
+
+      <div class="cta-section">
+        <div class="cta-content">
+          <h2>LET'S WORK TOGETHER TO ACHIEVE YOUR DIGITAL GOALS.</h2>
+          <div class="cta-buttons">
+            <a href="#" class="btn dark">
+              SCHEDULE A CALL ↗
+            </a>
+            <a href="#" class="btn light">
+              EXPLORE OUR WORK ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-section">
+        <h3>FAQ</h3>
+        <div class="faq-item active">
+          <div class="faq-question">
+            <span class="number">01</span> WHAT ARE YOUR CORE SERVICE AS A WEB
+            DEVELOPMENT ?<span class="icon">-</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              con Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatu Excepteur sint occaecat
+              cupidatat non proident.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="number">02</span> HOW MUCH DO YOU CHARGE FOR APP
+            DEVELOPMENT? <span class="icon">+</span>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="number">03</span> DO YOU HAVE GAME DEVELOPMENT SERVICE
+            ? <span class="icon">+</span>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="number">04</span> HOW LONG DO YOU DEVELOPMENT ?{" "}
+            <span class="icon">+</span>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="number">05</span> DO YOU HAVE GAME DEVELOPMENT SERVICE
+            ? <span class="icon">+</span>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="number">06</span> HOW MUCH DO YOU CHARGE FOR APP
+            DEVELOPMENT? <span class="icon">+</span>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="number">07</span> HOW LONG DO YOU DEVELOPMENT ?{" "}
+            <span class="icon">+</span>
+          </div>
+        </div>
+      </div>
+
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-left">
+            <h2>Let’s Talk</h2>
+            <div className="contact-info">
+              <p>+00 123 456 789</p>
+              <p>+00 123 456 789</p>
+              <p>live:chat@yourid</p>
+              <p>example@email.com</p>
+              <p>300 Broadway, San Francisco, CA 94133</p>
+            </div>
+          </div>
+          <div className="footer-right">
+            <ul>
+              <li>Work</li>
+              <li>Clients</li>
+              <li>Services</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+            <div className="social-icons">
+              <span>in</span>
+              <span>X</span>
+              <span>dr</span>
+              <span>tg</span>
+              <span>ig</span>
+              <span>up</span>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>Privacy Terms Sitemap</p>
+          <p>© 2016 – 2023 ASTMAKSD</p>
+        </div>
+      </footer>
     </>
   );
 };
