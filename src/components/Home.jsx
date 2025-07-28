@@ -3,9 +3,14 @@ import React, { useEffect, useState } from "react";
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [ansActiveIndex, setansActiveIndex] = useState();
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
+
+  const toggleFAQ = (index) => {
+    setansActiveIndex(ansActiveIndex === index ? null : index);
+  };
 
   const CardData = [
     {
@@ -410,11 +415,12 @@ const Home = () => {
 
       <div class="faq-section">
         <h3>FAQ</h3>
-        <div class="faq-item active">
-          <div class="faq-question">
+        <div className={`faq-item ${ansActiveIndex === 0 ? "active" : ""}`}>
+          <div className="faq-question" onClick={() => toggleFAQ(0)}>
             <span class="number">01</span> WHAT ARE YOUR CORE SERVICE AS A WEB
-            DEVELOPMENT ?<span class="icon">-</span>
+            DEVELOPMENT ?<span className="icon">{ansActiveIndex === 0 ? "-" : "+"}</span>
           </div>
+          {ansActiveIndex === 0 && (
           <div class="faq-answer">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -425,42 +431,115 @@ const Home = () => {
               cupidatat non proident.
             </p>
           </div>
+          )}
         </div>
-        <div class="faq-item">
-          <div class="faq-question">
+        <div className={`faq-item ${ansActiveIndex === 1 ? "active" : ""}`}>
+          <div className="faq-question" onClick={() => toggleFAQ(1)}>
             <span class="number">02</span> HOW MUCH DO YOU CHARGE FOR APP
-            DEVELOPMENT? <span class="icon">+</span>
+            DEVELOPMENT? <span className="icon">{ansActiveIndex === 1 ? "-" : "+"}</span>
           </div>
+          {ansActiveIndex === 1 && (
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              con Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatu Excepteur sint occaecat
+              cupidatat non proident.
+            </p>
+          </div>
+          )}
         </div>
-        <div class="faq-item">
-          <div class="faq-question">
+        <div className={`faq-item ${ansActiveIndex === 2 ? "active" : ""}`}>
+          <div className="faq-question" onClick={() => toggleFAQ(2)}>
             <span class="number">03</span> DO YOU HAVE GAME DEVELOPMENT SERVICE
-            ? <span class="icon">+</span>
+            ? <span className="icon">{ansActiveIndex === 2 ? "-" : "+"}</span>
           </div>
+          {ansActiveIndex === 2 && (
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              con Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatu Excepteur sint occaecat
+              cupidatat non proident.
+            </p>
+          </div>
+          )}
         </div>
-        <div class="faq-item">
-          <div class="faq-question">
+        <div className={`faq-item ${ansActiveIndex === 3 ? "active" : ""}`}>
+          <div className="faq-question" onClick={() => toggleFAQ(3)}>
             <span class="number">04</span> HOW LONG DO YOU DEVELOPMENT ?{" "}
-            <span class="icon">+</span>
+            <span className="icon">{ansActiveIndex === 3 ? "-" : "+"}</span>
           </div>
+          {ansActiveIndex === 3 && (
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              con Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatu Excepteur sint occaecat
+              cupidatat non proident.
+            </p>
+          </div>
+          )}
         </div>
-        <div class="faq-item">
-          <div class="faq-question">
+        <div className={`faq-item ${ansActiveIndex === 4 ? "active" : ""}`}>
+          <div className="faq-question" onClick={() => toggleFAQ(4)}>
             <span class="number">05</span> DO YOU HAVE GAME DEVELOPMENT SERVICE
-            ? <span class="icon">+</span>
+            ? <span className="icon">{ansActiveIndex === 4 ? "-" : "+"}</span>
           </div>
+          {ansActiveIndex === 4 && (
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              con Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatu Excepteur sint occaecat
+              cupidatat non proident.
+            </p>
+          </div>
+          )}
         </div>
-        <div class="faq-item">
-          <div class="faq-question">
+        <div className={`faq-item ${ansActiveIndex === 5 ? "active" : ""}`}>
+          <div className="faq-question" onClick={() => toggleFAQ(5)}>
             <span class="number">06</span> HOW MUCH DO YOU CHARGE FOR APP
-            DEVELOPMENT? <span class="icon">+</span>
+            DEVELOPMENT? <span className="icon">{ansActiveIndex === 5 ? "-" : "+"}</span>
           </div>
+          {ansActiveIndex === 5 && (
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              con Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatu Excepteur sint occaecat
+              cupidatat non proident.
+            </p>
+          </div>
+          )}
         </div>
-        <div class="faq-item">
-          <div class="faq-question">
+        <div className={`faq-item ${ansActiveIndex === 6 ? "active" : ""}`}>
+          <div className="faq-question" onClick={() => toggleFAQ(6)}>
             <span class="number">07</span> HOW LONG DO YOU DEVELOPMENT ?{" "}
-            <span class="icon">+</span>
+            <span className="icon">{ansActiveIndex === 6 ? "-" : "+"}</span>
           </div>
+          {ansActiveIndex === 6 && (
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              con Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatu Excepteur sint occaecat
+              cupidatat non proident.
+            </p>
+          </div>
+          )}
         </div>
       </div>
 
